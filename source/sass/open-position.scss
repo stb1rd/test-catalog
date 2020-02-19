@@ -1,0 +1,16 @@
+.open-position {
+    padding-left: 0;
+    li {
+      display: inline;
+    }
+  }
+  
+  .open-position__hidden {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    .open-position__hidden {
+      display: initial;
+    }
+  }

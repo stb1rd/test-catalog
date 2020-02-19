@@ -1,18 +1,20 @@
 .open-filter {
-    height: 56px;
-    width: 289px;
-    color: white;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #27A8DD, #1A7FB8);
-    border: none;
-    border-radius: 10px;
-    ::before {
-        background-image: url("img/filter.svg") no-repeat;
-    }
+  height: 56px;
+  width: 289px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #27a8dd, #1a7fb8);
+  border: none;
+  border-radius: 10px;
+  ::before {
+    background-image: url("img/filter.svg") no-repeat;
+  }
 }
-.open-filter__position {
-    padding-left: 0;
-    li {
-        display: inline;
-    }
+
+
+@media (min-width: $tablet-width) {
+  .open-filter {
+    width: 675px;
+  }
+
 }
