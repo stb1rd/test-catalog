@@ -1,16 +1,22 @@
 .open-position {
-    padding-left: 0;
-    li {
-      display: inline;
-    }
+  padding-left: 0;
+  li {
+    display: inline;
   }
-  
-  .open-position__hidden {
-    display: none;
-  }
+}
 
-  @media (min-width: $tablet-width) {
-    .open-position__hidden {
-      display: initial;
-    }
+.open-position__hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .open-position__hidden {
+    display: initial;
   }
+}
+
+@media (min-width: $full-width) {
+  .open-position {
+    padding-left: 70px;
+  }
+}

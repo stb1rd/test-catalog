@@ -20,7 +20,6 @@
                         <li class="heading__shoes"><a>Обувь</a></li>
                         <li class="heading__other"><a>Другая одежда</a></li>
                     </ul>
-                    <button class="open-filter">Открыть фильтр</button>
                     <ul class="open-position">
                         <li class="open-position__hidden">Сортировать</li>
                         <li class="open-position__price"><a>по цене</a></li>
@@ -30,42 +29,77 @@
                 </div>
             </section>
             <section class="catalog">
-                <ul class="catalog__item">
-                    <li><img src="img/item-1-desktop.png" alt="Пример товара"></li>
-                    <li class="catalog__price">3771 &#8381</li>
-                    <li class="catalog__name"><span>Nike</span> / Кроссовки T-LITE XI</li>
-                </ul>
-                <ul class="catalog__item">
-                    <li><img src="img/item2-desktop.png" alt="Пример товара"></li>
-                    <li class="catalog__price">3771 &#8381</li>
-                    <li class="catalog__name"><span>Nike</span> /Кроссовки AIR MAX 720</li>
-                </ul>
-                <ul class="catalog__item">
-                    <li><img src="img/item3-desktop.png" alt="Пример товара"></li>
-                    <li class="catalog__price">3771 &#8381</li>
-                    <li class="catalog__name"><span>Nike</span>/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</li>
-                </ul>
-                <ul class="catalog__item">
-                    <li><img src="img/item-1-desktop.png" alt="Пример товара"></li>
-                    <li class="catalog__price">3771 &#8381</li>
-                    <li class="catalog__name"><span>Nike</span>/ Кроссовки T-LITE XI </li>
-                </ul>
-                <ul class="catalog__item">
-                    <li><img src="img/item2-desktop.png" alt="Пример товара"></li>
-                    <li class="catalog__price">3771 &#8381</li>
-                    <li class="catalog__name"><span>Nike</span>/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</li>
-                </ul>
-                <ul class="catalog__item">
-                    <li><img src="img/item3-desktop.png" alt="Пример товара"></li>
-                    <li class="catalog__price">3771 &#8381</li>
-                    <li class="catalog__name"><span>Nike</span>/ Кроссовки AIR MAX 720 MEN'S AIR MONARCH IV TRAINING
-                        SHOE</li>
-                </ul>
+                <div class="filter-position">
+                    <button class="open-filter">Открыть фильтр</button>
+                    <div class="filter">
+                        <p class="filter__price">Цена &#8381</p>
+                        <div class="filter__range">
+                            <div class="price-controls">
+                                <label class="min-price">от <input type="text" name="min-price" value="5456"></label>
+                                <label class="max-price">до <input type="text" name="max-price" value="31 368"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>
+                            </div>
+                        </div>
+                        <fieldset class="filter__first">
+                            <p class="filter__info">Тип продукта</p>
+                            <label for="first" class="filter__checkbox"><input type="checkbox" id="first">Первый
+                                тип</label>
+                            <label for="second" class="filter__checkbox"><input type="checkbox" id="second">Второй
+                                тип</label>
+                        </fieldset>
+                        <fieldset class="filter__second">
+                            <p class="filter__info">Категория</p>
+                            <label for="shoes" class="filter__radio"><input type="radio" id="shoes">Обувь</label>
+                            <label for="clothes" class="filter__radio"><input type="radio" id="clothes">Одежда</label>
+                            <label for="other" class="filter__radio"><input type="radio" id="other">Остальное</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="catalog__product">
+                    <ul class="catalog__item">
+                        <li><img src="img/item-1-desktop.png" alt="Пример товара"></li>
+                        <li class="catalog__price">3771 &#8381</li>
+                        <li class="catalog__name"><span>Nike</span> / Кроссовки T-LITE XI</li>
+                    </ul>
+                    <ul class="catalog__item">
+                        <li><img src="img/item2-desktop.png" alt="Пример товара"></li>
+                        <li class="catalog__price">3771 &#8381</li>
+                        <li class="catalog__name"><span>Nike</span> /Кроссовки AIR MAX 720</li>
+                    </ul>
+                    <ul class="catalog__item">
+                        <li><img src="img/item3-desktop.png" alt="Пример товара"></li>
+                        <li class="catalog__price">3771 &#8381</li>
+                        <li class="catalog__name"><span>Nike</span>/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</li>
+                    </ul>
+                    <ul class="catalog__item">
+                        <li><img src="img/item-1-desktop.png" alt="Пример товара"></li>
+                        <li class="catalog__price">3771 &#8381</li>
+                        <li class="catalog__name"><span>Nike</span>/ Кроссовки T-LITE XI </li>
+                    </ul>
+                    <ul class="catalog__item">
+                        <li><img src="img/item2-desktop.png" alt="Пример товара"></li>
+                        <li class="catalog__price">3771 &#8381</li>
+                        <li class="catalog__name"><span>Nike</span>/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</li>
+                    </ul>
+                    <ul class="catalog__item">
+                        <li><img src="img/item3-desktop.png" alt="Пример товара"></li>
+                        <li class="catalog__price">3771 &#8381</li>
+                        <li class="catalog__name"><span>Nike</span>/ Кроссовки AIR MAX 720 MEN'S AIR MONARCH IV TRAINING
+                            SHOE</li>
+                    </ul>
+                </div>
                 <a class="catalog__button">Загрузить еще</a>
             </section>
         </div>
     </main>
     <footer></footer>
+    <script src="/js/slider.js"></script>
 </body>
 
 </html>

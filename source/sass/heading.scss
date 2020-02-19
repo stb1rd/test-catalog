@@ -12,14 +12,15 @@
   }
   li:nth-child(2) {
     padding-left: 50px;
-    ::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 30px;
-      left: 135px;
-      background: url("/img/Vector2.svg") no-repeat;
-    }
+  }
+
+  li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 135px;
+    background: url("/img/Vector2.svg") no-repeat;
   }
 }
 
@@ -34,4 +35,20 @@
 .heading__other {
   color: #545c60;
   font-size: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .heading li:nth-child(2) ::before {
+    left: 158px;
+  }
+}
+
+@media (min-width: $full-width) {
+  .heading {
+    padding-left: 70px;
+  }
+
+  .heading li:nth-child(2) ::before {
+    left: 222px;
+  }
 }

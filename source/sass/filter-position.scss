@@ -1,0 +1,15 @@
+@media (min-width: $desktop-width) {
+  .filter-position {
+    width: 290px;
+    height: 435px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    order: 2;
+  }
+}
+
+@media (min-width: $full-width) {
+  .filter-position {
+    margin-left: -60px;
+  }
+}

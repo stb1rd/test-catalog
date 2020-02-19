@@ -16,5 +16,10 @@
   .open-filter {
     width: 675px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .open-filter {
+    display: none;
+  }
 }

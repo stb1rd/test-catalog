@@ -20,3 +20,9 @@
       padding-left: 40px;
     }
   }
+
+  @media (min-width: $full-width) {
+    .container {
+      width: 1440px;
+    }
+  }

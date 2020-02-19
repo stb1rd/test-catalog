@@ -35,6 +35,10 @@ body {
     padding-right: 40px;
     padding-left: 40px; } }
 
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px; } }
+
 .catalog__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,8 +98,64 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  .catalog__product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 652px; }
   .catalog__button {
-    width: 675px; } }
+    width: 675px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; } }
+
+@media (min-width: 1024px) {
+  .catalog {
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none; }
+  .catalog__product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 652px; }
+  .catalog__button {
+    width: 609px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: -316px;
+    margin-bottom: 80px;
+    margin-top: 30px; } }
+
+@media (min-width: 1440px) {
+  .catalog__product {
+    width: 949px; }
+  .catalog__button {
+    margin-left: -328px;
+    width: 953px; } }
 
 footer {
   height: 747px;
@@ -117,6 +177,10 @@ footer {
   .open-filter {
     width: 675px; } }
 
+@media (min-width: 1024px) {
+  .open-filter {
+    display: none; } }
+
 .heading {
   padding-left: 0; }
   .heading li {
@@ -129,13 +193,13 @@ footer {
     background: url("/img/Vector.svg") no-repeat; }
   .heading li:nth-child(2) {
     padding-left: 50px; }
-    .heading li:nth-child(2) ::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 30px;
-      left: 135px;
-      background: url("/img/Vector2.svg") no-repeat; }
+  .heading li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 135px;
+    background: url("/img/Vector2.svg") no-repeat; }
 
 .heading__shoes {
   color: #27a8dd;
@@ -146,6 +210,16 @@ footer {
 .heading__other {
   color: #545c60;
   font-size: 20px; }
+
+@media (min-width: 1024px) {
+  .heading li:nth-child(2) ::before {
+    left: 158px; } }
+
+@media (min-width: 1440px) {
+  .heading {
+    padding-left: 70px; }
+  .heading li:nth-child(2) ::before {
+    left: 222px; } }
 
 .catalog-info {
   text-align: center;
@@ -163,5 +237,141 @@ footer {
 @media (min-width: 768px) {
   .open-position__hidden {
     display: initial; } }
+
+@media (min-width: 1440px) {
+  .open-position {
+    padding-left: 70px; } }
+
+.price-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 214px;
+  height: 36px;
+  margin-bottom: 20px;
+  margin-left: -67px;
+  font-size: 0;
+  background-color: #f3f3f3;
+  border: 2px solid #f3f3f3;
+  border-radius: 5px; }
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 43px;
+  background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer; }
+
+.price-controls .min-price,
+.price-controls .max-price {
+  color: black;
+  padding-left: 30px; }
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none; }
+
+.range-controls {
+  position: relative;
+  margin-left: -65px;
+  margin-bottom: 32px; }
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3); }
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #27A8DD; }
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #E7E7E7;
+  border: 8px solid #E7E7E7;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer; }
+
+.range-toggle:hover {
+  background: #1c4f80; }
+
+.range-toggle-min {
+  left: 0; }
+
+.range-toggle-max {
+  left: 56%; }
+
+@media (min-width: 320px) {
+  .filter {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .filter {
+    display: block;
+    width: 290px;
+    height: 435px;
+    padding-left: 24px; }
+  .filter__price {
+    font-size: 16px;
+    font-weight: 700; }
+  .filter__range {
+    width: 161px;
+    margin: 50px auto;
+    margin-top: 10px;
+    color: #ffffff; }
+  .filter__first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none; }
+  .filter__second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none; } }
+
+@media (min-width: 1024px) {
+  .filter-position {
+    width: 290px;
+    height: 435px;
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media (min-width: 1440px) {
+  .filter-position {
+    margin-left: -60px; } }
 
 /*# sourceMappingURL=style.css.map */
