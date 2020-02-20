@@ -1,16 +1,27 @@
 .open-filter {
-  height: 56px;
+  height: 46px;
   width: 289px;
   color: white;
   text-transform: uppercase;
   background: linear-gradient(to right, #27a8dd, #1a7fb8);
   border: none;
   border-radius: 10px;
-  ::before {
-    background-image: url("img/filter.svg") no-repeat;
+  span {
+    padding-left: 30px;
+    height: 50px;
+    display: inline-block;
+    padding-top: 14px;
   }
 }
 
+.open-filter::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(/img/filter.svg) no-repeat;
+  background-position-y: 9px;
+}
 
 @media (min-width: $tablet-width) {
   .open-filter {
