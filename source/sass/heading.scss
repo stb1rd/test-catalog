@@ -27,6 +27,28 @@
   }
 }
 
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 4px;
+  left: 0px;
+  top: 130px;
+  background: #f3f3f3;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  width: 104px;
+  height: 4px;
+  left: 15px;
+  top: 130px;
+  background: #27a8dd;
+  border-radius: 2px;
+  z-index: 1;
+}
+
 .heading__shoes {
   color: #27a8dd;
   font-size: 20px;
@@ -40,7 +62,29 @@
   font-size: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .heading {
+    padding-left: 20px;
+  }
+  .heading::before {
+    left: 46px;
+  }
+  .heading::after {
+    width: 690px;
+    left: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .heading::before {
+    left: 57px;
+  }
+
+  .heading::after {
+    width: 923px;
+    left: 58px;
+  }
+
   .heading li:nth-child(2) ::before {
     left: 158px;
   }
@@ -49,6 +93,15 @@
 @media (min-width: $full-width) {
   .heading {
     padding-left: 70px;
+  }
+
+  .heading::after {
+    width: 1250px;
+    left: 105px;
+  }
+
+  .heading::before {
+    left: 105px;
   }
 
   .heading li:nth-child(2) ::before {
