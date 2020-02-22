@@ -35,17 +35,14 @@
                         <p class="filter__price">Цена &#8381</p>
                         <div class="filter__range">
                             <div class="price-controls">
-                                <label class="min-price">от <input type="text" name="min-price" value="5456"></label>
-                                <label class="max-price">до <input type="text" name="max-price" value="31 368"></label>
-                            </div>
-                            <div class="range-controls">
-                                <div class="scale">
-                                    <div class="bar"></div>
-                                </div>
-                                <div class="range-toggle range-toggle-min"></div>
-                                <div class="range-toggle range-toggle-max"></div>
+                                <p class="min-price">от <span id="min-price"></span></p>
+                                <p class="max-price">до <span id="max-price"></span></p>
                             </div>
                         </div>
+                        <input class="multiple" type="range" multiple min="0" max="50000"
+                            value="5456" id="Range-second">
+                            <input class="multiple" type="range" multiple min="0" max="50000"
+                            value="31368" id="Range-first">
                         <fieldset class="filter__first">
                             <p class="filter__info">Тип продукта</p>
                             <input type="checkbox" id="first"><label for="first" class="filter__checkbox">Первый
@@ -55,9 +52,12 @@
                         </fieldset>
                         <fieldset class="filter__second">
                             <p class="filter__info">Категория</p>
-                            <input type="radio" id="shoes" name="rdbtn"><label for="shoes" class="filter__radio">Обувь</label>
-                            <input type="radio" id="clothes" name="rdbtn"><label for="clothes" class="filter__radio">Одежда</label>
-                            <input type="radio" id="other" name="rdbtn"><label for="other" class="filter__radio">Остальное</label>
+                            <input type="radio" id="shoes" name="rdbtn"><label for="shoes"
+                                class="filter__radio">Обувь</label>
+                            <input type="radio" id="clothes" name="rdbtn"><label for="clothes"
+                                class="filter__radio">Одежда</label>
+                            <input type="radio" id="other" name="rdbtn"><label for="other"
+                                class="filter__radio">Остальное</label>
                         </fieldset>
                     </div>
                 </div>
