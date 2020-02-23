@@ -415,19 +415,16 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none; }
-    .filter__first input[type="checkbox"]:checked,
-    .filter__first input[type="checkbox"]:not(:checked) {
+    .filter__first input[type="checkbox"] {
       position: absolute;
       left: -9999px; }
-    .filter__first input[type="checkbox"]:checked + label,
-    .filter__first input[type="checkbox"]:not(:checked) + label {
+    .filter__first input[type="checkbox"] + label {
       display: inline-block;
       position: relative;
       padding-left: 28px;
       line-height: 20px;
       cursor: pointer; }
-    .filter__first input[type="checkbox"]:checked + label:before,
-    .filter__first input[type="checkbox"]:not(:checked) + label:before {
+    .filter__first input[type="checkbox"] + label:before {
       content: "";
       position: absolute;
       left: 0px;
@@ -437,14 +434,11 @@ footer {
       border: 2px solid #27a8dd;
       border-radius: 3px;
       background-color: #ffffff; }
-    .filter__first input[type="checkbox"]:checked + label:after,
-    .filter__first input[type="checkbox"]:not(:checked) + label:after {
+    .filter__first input[type="checkbox"] + label:after {
       content: "";
       position: absolute;
       -webkit-transition: all 0.2s ease;
-      transition: all 0.2s ease; }
-    .filter__first input[type="checkbox"]:checked + label:after,
-    .filter__first input[type="checkbox"]:not(:checked) + label:after {
+      transition: all 0.2s ease;
       left: 3px;
       top: 2px;
       width: 16px;
